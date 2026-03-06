@@ -1,12 +1,12 @@
-# 🤖 Run Local AI on Android (Termux)
+# Run Local AI on Android (Termux)
 
 Run a fully offline AI on your Android phone — no internet, no cloud, no cost. 100% private.
 
-> 📱 Built and tested on Android with 6GB RAM
+> Built and tested on Android with 6GB RAM
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [What is this?](#what-is-this)
 - [Requirements](#requirements)
@@ -45,8 +45,8 @@ Everything runs **100% offline** after setup. No data is sent anywhere.
 | Storage | 4GB free | 8GB+ free |
 | Termux | F-Droid version | F-Droid version |
 
-> ⚠️ Install Termux from **F-Droid only** — the Play Store version is outdated.
-> 👉 https://f-droid.org/packages/com.termux/
+> Install Termux from **F-Droid only** — the Play Store version is outdated.
+> https://f-droid.org/packages/com.termux/
 
 ---
 
@@ -98,9 +98,9 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build --config Release -j4
 ```
 
-⏳ Takes **5–15 minutes**. Phone will get warm — that's normal!
+Takes **5–15 minutes**. Phone will get warm — that's normal!
 
-> ⚠️ You will see many **warnings** during compilation — these are normal and can be ignored. Only worry if you see `error:` or `FAILED:`
+> You will see many **warnings** during compilation — these are normal and can be ignored. Only worry if you see `error:` or `FAILED:`
 
 **What these commands do:**
 - First command → Plans the build for your CPU (like an architect drawing blueprints)
@@ -225,13 +225,13 @@ See the full troubleshooting guide: [docs/06-troubleshooting.md](docs/06-trouble
 
 ---
 
-## 📝 License
+## License
 
 MIT License — free to use, modify, and share!
 
 ---
 
-## 🙏 Credits
+## Credits
 
 - [llama.cpp](https://github.com/ggerganov/llama.cpp) by Georgi Gerganov
 - [TinyLlama](https://huggingface.co/TinyLlama) by StatNLP Research
