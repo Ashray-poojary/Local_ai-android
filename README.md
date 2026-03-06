@@ -55,7 +55,7 @@ Everything runs **100% offline** after setup. No data is sent anywhere.
 Run this single command in Termux and it will do everything automatically:
 
 ```bash
-curl -O https://raw.githubusercontent.com/YOUR_USERNAME/local-ai-android/main/scripts/setup.sh && chmod +x setup.sh && ./setup.sh
+curl -O https://raw.githubusercontent.com/Ashray-poojary/Local_ai-android/main/scripts/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 > The script will ask you which model to download and set everything up!
