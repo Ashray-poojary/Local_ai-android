@@ -18,15 +18,15 @@ print_step() {
 }
 
 print_success() {
-  echo -e "${GREEN}✅ ${1}${NC}"
+  echo -e "${GREEN} ${1}${NC}"
 }
 
 print_warning() {
-  echo -e "${YELLOW}⚠️  ${1}${NC}"
+  echo -e "${YELLOW}  ${1}${NC}"
 }
 
 print_error() {
-  echo -e "${RED}❌ ${1}${NC}"
+  echo -e "${RED} ${1}${NC}"
 }
 
 # Welcome message
@@ -38,7 +38,7 @@ echo "  ██║     ██║   ██║██║     ██╔══██�
 echo "  ███████╗╚██████╔╝╚██████╗██║  ██║███████╗██║  ██║██║"
 echo "  ╚══════╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝"
 echo -e "${NC}"
-echo "  🤖 Local AI on Android - Auto Setup"
+echo "   Local AI on Android - Auto Setup"
 echo "  ======================================"
 echo ""
 
@@ -109,7 +109,7 @@ echo ""
 echo "  How much RAM does your device have?"
 echo ""
 echo "  1) TinyLlama 1.1B Q4  (~600MB)  — 4GB RAM devices  [Fast, basic quality]"
-echo "  2) Phi-3 Mini Q4      (~2.3GB)  — 6GB RAM devices  [Recommended ✅]"
+echo "  2) Phi-3 Mini Q4      (~2.3GB)  — 6GB RAM devices  [Recommended ]"
 echo "  3) Skip download (I'll download manually)"
 echo ""
 read -p "  Enter choice (1/2/3): " model_choice
@@ -149,21 +149,21 @@ fi
 # -------------------------------------------------------
 # STEP 5 - Done! Show usage instructions
 # -------------------------------------------------------
-print_step "Step 5/5 — Setup complete! 🎉"
+print_step "Step 5/5 — Setup complete! "
 
 echo ""
 echo -e "${GREEN}======================================"
-echo "  🎉 Your Local AI is Ready!"
+echo "   Your Local AI is Ready!"
 echo "======================================${NC}"
 echo ""
-echo "  📱 Chat in terminal:"
+echo "   Chat in terminal:"
 echo ""
 echo "  ./build/bin/llama-cli \\"
 echo "    -m $MODEL_FILE \\"
 echo "    --conversation \\"
 echo "    -sys \"You are a helpful assistant.\""
 echo ""
-echo "  🌐 Start Web UI:"
+echo "   Start Web UI:"
 echo ""
 echo "  ./build/bin/llama-server \\"
 echo "    -m $MODEL_FILE \\"
@@ -172,6 +172,6 @@ echo "    --port 8080"
 echo ""
 echo "  Then open: http://localhost:8080"
 echo ""
-echo "  📚 Full guide: https://github.com/YOUR_USERNAME/local-ai-android"
+echo "   Full guide: https://github.com/YOUR_USERNAME/local-ai-android"
 echo ""
 print_success "Enjoy your private, offline AI! 🤖"
