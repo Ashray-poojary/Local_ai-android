@@ -2,7 +2,7 @@
 
 # ============================================================
 # Local AI on Android (Termux) - Auto Setup Script
-# GitHub: https://github.com/YOUR_USERNAME/local-ai-android
+# GitHub: https://github.com/Ashray-poojary/local-ai-android
 # ============================================================
 
 # Colors for output
