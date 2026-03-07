@@ -176,7 +176,7 @@ echo "   Full guide: https://github.com/YOUR_USERNAME/local-ai-android"
 echo ""
 print_success "Enjoy your private, offline AI! 🤖"
 
-echo "To write a shortcut for cli & web enter (y/n):"
+echo "To write a shortcut for cli & webserver enter (y/n):"
 read -ch
-if [ch == y]; then
+if [ "$ch" == y ]; then
 # write code to make a shortcut file
