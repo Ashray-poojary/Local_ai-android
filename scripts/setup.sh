@@ -177,17 +177,23 @@ echo ""
 print_success "Enjoy your private, offline AI! 🤖"
 
 # run script 
-read -n 1 -p "Creating shortcut file for cli or web (y/n)"
+read -n 1 -p "Creating shortcut file for cli or web (y/n) " ch
+echo # Adds a newline after the input
+
 if [[ "$ch" == "y" || "$ch" == "Y" ]]; then
-   echo "Creating a executable file...."
-    cat << EOF > run.sh
-    #!/bin/bash
-    chmod +x run.sh
-    echo "Script created!"
+    echo "Creating an executable file...."
     echo "In next use run this command in terminal"
     echo "bash run.sh"
-    EOF
+    cat << EOF > run.sh
+#!/bin/bash
+echo "Script created!"
+
+
+EOF
+    chmod +x run.sh # Moves this outside to execute on the file
 else
+    echo "Skipping file creation."
+fi
 
 
 
