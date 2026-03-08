@@ -176,3 +176,19 @@ echo "   Full guide: https://github.com/YOUR_USERNAME/local-ai-android"
 echo ""
 print_success "Enjoy your private, offline AI! 🤖"
 
+# run script 
+read -n 1 -p "Creating shortcut file for cli or web (y/n)"
+if [[ "$ch" == "y" || "$ch" == "Y" ]]; then
+   echo "Creating a executable file...."
+    cat << EOF > run.sh
+    #!/bin/bash
+    chmod +x run.sh
+    echo "Script created!"
+    echo "In next use run this command in terminal"
+    echo "bash run.sh"
+    EOF
+else
+
+
+
+
