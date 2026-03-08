@@ -189,8 +189,10 @@ echo "welcome to rn script..."
 
 EOF
     chmod +x run.sh # Moves this outside to execute on the file
+    echo "script created"
 else
     echo "Skipping file creation."
+    echo "Bye......"
 fi
 
 
