@@ -182,8 +182,6 @@ echo # Adds a newline after the input
 
 if [[ "$ch" == "y" || "$ch" == "Y" ]]; then
     echo "Creating an executable file...."
-    echo "In next use run this command in terminal"
-    echo "bash run.sh"
     cat << EOF > run.sh
 #!/bin/bash
 echo "Script created!"
