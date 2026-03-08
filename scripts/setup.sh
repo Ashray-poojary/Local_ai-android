@@ -184,7 +184,7 @@ if [[ "$ch" == "y" || "$ch" == "Y" ]]; then
     echo "Creating an executable file...."
     cat << EOF > run.sh
 #!/bin/bash
-echo "Script created!"
+echo "welcome to rn script..."
 
 
 EOF
