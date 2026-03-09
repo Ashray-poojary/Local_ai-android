@@ -182,15 +182,15 @@ echo # Adds a newline after the input
 
 if [[ "$ch" == "y" || "$ch" == "Y" ]]; then
     echo "Creating an executable file...."
-    cat << EOF > run.sh
+    cat << 'EOF' > run.sh
 #!/bin/bash
-echo "welcome to run script..."
+echo "script executing....."
 echo -e "1.cli run\n2.web run\n3.exit"
 read -n 1 -p "Enter your choice: " cho
 echo
-if [ "$cho" == 1 ]; then
+if [ "$cho" == "1" ]; then
 #cli command
-elif [ "$cho" == 2 ]; then
+elif [ "$cho" == "2" ]; then
 #web command
 else
 exit 0
