@@ -187,9 +187,10 @@ if [[ "$ch" == "y" || "$ch" == "Y" ]]; then
 echo "welcome to run script..."
 echo "1.cli run\n2.web run\n3.exit"
 read -n 1 -p "Enter your choice" cho
+echo
 if [ "$cho" == 1 ]; then
 #cli command
-elseif [ "$cho" == 2 ]; then
+elif [ "$cho" == 2 ]; then
 #web command
 else
 exit(0)
