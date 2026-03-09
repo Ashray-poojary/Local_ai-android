@@ -185,8 +185,14 @@ if [[ "$ch" == "y" || "$ch" == "Y" ]]; then
     cat << EOF > run.sh
 #!/bin/bash
 echo "welcome to run script..."
-read -n 1 -p "Enter your choice" ch
-
+echo "1.cli run\n2.web run\n3.exit"
+read -n 1 -p "Enter your choice" cho
+if [ "$cho" == 1 ]; then
+#cli command
+elseif [ "$cho" == 2 ]; then
+#web command
+else
+exit(0)
 EOF
     chmod +x run.sh # Moves this outside to execute on the file
     echo "script created"
