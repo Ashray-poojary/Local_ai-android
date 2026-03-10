@@ -189,9 +189,9 @@ echo -e "1.cli run\n2.web run\n3.exit"
 read -n 1 -p "Enter your choice: " cho
 echo
 if [ "$cho" == "1" ]; then
-#cli command
+./build/bin/llama-cli -m tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf --conversation -sys "You are helpful assistance." -n 256
 elif [ "$cho" == "2" ]; then
-#web command
+
 else
 exit 0
 EOF
