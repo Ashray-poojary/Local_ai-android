@@ -185,7 +185,7 @@ if [[ "$ch" == "y" || "$ch" == "Y" ]]; then
     cat << 'EOF' > run.sh
 #!/bin/bash
 echo "script executing....."
-echo -e "1.cli run\n2.web run\n3.cli with file reading.\n4.web with file reading/n5.exit"
+echo -e "1.cli run\n2.web run\n3.cli with file reading\n4.exit"
 read -n 1 -p "Enter your choice: " cho
 echo
 if [ "$cho" == "1" ]; then
