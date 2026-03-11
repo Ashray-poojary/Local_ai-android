@@ -196,9 +196,11 @@ elif [ "$cho" == "2" ]; then
   --host 0.0.0.0 \
   --port 8080
 elif [ "$cho" == "3" ]; then
-#add somthing
-elif [ "$cho" == "5" ]; then
-#add somthing 
+./build/bin/llama-cli -m tinyllama*.gguf \
+  --conversation \
+  -f notes.txt \
+  -sys "analyse this file"
+else
 exit 0
 EOF
     chmod +x run.sh # Moves this outside to execute on the file
