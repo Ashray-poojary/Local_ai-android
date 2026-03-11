@@ -185,7 +185,7 @@ if [[ "$ch" == "y" || "$ch" == "Y" ]]; then
     cat << 'EOF' > run.sh
 #!/bin/bash
 echo "script executing....."
-echo -e "1.cli run\n2.web run\n3.exit"
+echo -e "1.cli run\n2.web run\n3.cli with file reading.\n4.web with file reading/n5.exit"
 read -n 1 -p "Enter your choice: " cho
 echo
 if [ "$cho" == "1" ]; then
@@ -195,7 +195,10 @@ elif [ "$cho" == "2" ]; then
   -m tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf \
   --host 0.0.0.0 \
   --port 8080
-else
+elif [ "$cho" == "3" ]; then
+#add somthing
+elif [ "$cho" == "5" ]; then
+#add somthing 
 exit 0
 EOF
     chmod +x run.sh # Moves this outside to execute on the file
