@@ -95,7 +95,7 @@ fi
 cmake --build build --config Release -j4
 if [ $? -ne 0 ]; then
   print_error "Build failed. Try running with -j2:"
-  echo "  cmake --build build --config Release -j2"
+  #echo "  cmake --build build --config Release -j2"
   cmake --build build --config Release -j2 # added by me
   exit 1
 fi
